@@ -1,0 +1,182 @@
+.users-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:#ffebb9;
+}
+h1{
+  margin-top: 22px; /* Add margin-top to create space */
+  margin-bottom: 2px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(245, 233, 227);
+}
+
+.users-table h1 {
+  margin-bottom: 1rem;
+  white-space: nowrap; /* Prevent line break for long heading */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Display ellipsis (...) for hidden text */
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  
+}
+.users-table {
+  background-color: #89a07c;
+  padding-top: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 50px;
+  border-radius: 5%;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.users-table h2 {
+  margin-bottom: 1.5rem;
+}
+
+.users-table table {
+  width: 100%;
+  background-color: black;
+  table-layout: fixed; /* Fix table layout to handle long text */
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+ /* Change the text color */
+.btn-success{
+  background-color: #3c5c44;
+  border-radius: 15px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 50px;
+  color: white;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  line-height: 26px;
+}
+
+.btn-danger {
+  background-color: #a56653;
+  border-radius: 15px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 50px;
+  color: white;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  line-height: 26px;
+  transition: background-color 0.3s ease; /* Add transition */
+}
+  /* Hover styles */
+  &:hover {
+    background-color: #f26f4d; 
+}
+
+
+.users-table th,
+.users-table td {
+padding-top: 1rem;
+padding-bottom: 1rem;
+background-color: #ffeedd;
+border: 0.5px solid #f7f4f4;
+word-wrap: break-word;
+max-width: 200px;
+}
+
+.table-row {
+  color: whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 50%;
+  font-size: 17px;
+  white-space: nowrap; /* Prevent line break for long text */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Display ellipsis (...) for hidden text */
+}
+.users-table th {
+  font-weight: bold;
+  background-color: #df8a66;
+  
+}
+
+.users-table .btn {
+  margin-right: 0.5rem;
+  
+}
+
+.add-button {
+  position: relative; /* Change position to relative */
+  margin-top: 1rem; /* Add margin-top to create space */
+  margin-bottom: 1rem; /* Add margin-bottom to create space */
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: #f19167;
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 50px;
+  color: white;
+  line-height: 26px;
+  transition: background-color 0.3s ease;
+
+  /* Hover styles */
+  &:hover {
+    background-color: #f26f4d;
+  }
+}
+
+  
+
+  
+
+
+
+@media screen and (max-width: 576px) {
+  .users-table {
+    padding: 1rem;
+  }
+}
+
+.back-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Add margin-bottom for the gap */
+}
+.back-button {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: #f19167;
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 50px;
+  color: white;
+  line-height: 26px;
+  transition: background-color 0.3s ease; /* Add transition */
+
+  /* Hover styles */
+  &:hover {
+    background-color: #f26f4d;
+
+  
+
+  }
+}

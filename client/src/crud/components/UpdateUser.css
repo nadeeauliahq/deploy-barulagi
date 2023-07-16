@@ -1,0 +1,51 @@
+.update-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #a56653;
+}
+
+.update-form {
+  background-color: #F3DEBA;
+  padding: 2rem;
+  border-radius: 40px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.update-form h2 {
+  margin-bottom: 1.5rem;
+}
+
+.update-form form {
+  margin-bottom: 1rem;
+}
+
+.update-form label {
+  font-weight: bold;
+}
+
+.update-form input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.btn-update {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #3c5c44;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-radius: 50px;
+  color: white;
+  transition: background-color 0.3s ease; /* Add transition */
+
+  /* Hover styles */
+  &:hover {
+    background-color: #2e4834; /* Change background color on hover */
+  }
+}

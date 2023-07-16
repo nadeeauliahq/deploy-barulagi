@@ -1,0 +1,60 @@
+.create-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #a56653;
+}
+
+h2{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: 50%;
+font-size: 35px;
+text-align: center;
+}
+.create-user-form {
+  background-color: #F3DEBA;
+  padding: 2rem;
+  border-radius: 40px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.create-user-form h2 {
+  margin-bottom: 1.5rem;
+}
+
+.create-user-form form {
+  margin-bottom: 1rem;
+}
+
+.create-user-form label {
+  font-weight: bold;
+}
+
+.create-user-form input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  box-sizing: border-box; /* Ensure the padding is included in the width calculation */
+  resize: vertical; /* Allow the input to be resized vertically */
+}
+
+
+.btn-add {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #3c5c44;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-radius: 50px;
+  color: white;
+  transition: background-color 0.3s ease; /* Add transition */
+
+  /* Hover styles */
+  &:hover {
+    background-color: #2e4834; /* Change background color on hover */
+  }
+}
