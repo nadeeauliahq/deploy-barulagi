@@ -25,7 +25,7 @@ function UpdateUser() {
   const handleUpdate = (e) => {
     e.preventDefault();
     axios
-      .put("http://localhost:3001/update/" + id, { name, forWho, message })
+      .put("https://deploy-project-new.vercel.app/update/" + id, { name, forWho, message })
       .then((result) => {
         console.log(result);
         navigate("/users");
