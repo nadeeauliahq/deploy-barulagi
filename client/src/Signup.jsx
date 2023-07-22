@@ -24,7 +24,7 @@ function Signup() {
         }
 
         axios
-            .post("https://deploy-project-new.vercel.app/register", { name, email, password })
+            .post("https://deploy-baru-lagi.vercel.app/register", { name, email, password })
             .then((res) => {
                 navigate("/login");
             })
