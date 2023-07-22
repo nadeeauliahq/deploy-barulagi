@@ -7,9 +7,9 @@ const EmployeeModel = require("./models/Employee")
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: 'https://deploy-baru-cape-8t7xj3vy7-nadeeauliahq.vercel.app',
+  origin: '',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true, // If you are using cookies or authentication headers
+ 
 }));
 
 mongoose.connect("mongodb+srv://nadeeaulia:palemb2703@cluster0.pga6q2i.mongodb.net/test?retryWrites=true&w=majority");
