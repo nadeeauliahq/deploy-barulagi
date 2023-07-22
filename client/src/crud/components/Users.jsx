@@ -9,14 +9,14 @@ function Users() {
 
   useEffect(() => {
     axios
-      .get("https://deploy-project-new.vercel.app/users")
+      .get("https://deploy-baru-lagi.vercel.app/users")
       .then((result) => setUsers(result.data))
       .catch((err) => console.log(err));
   }, []);
 
   const handleDelete = (id) => {
     axios
-      .delete("https://deploy-project-new.vercel.app/delete/" + id)
+      .delete("https://deploy-baru-lagi.vercel.app/delete/" + id)
       .then((res) => {
         console.log(res);
         window.location.reload();
