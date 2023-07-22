@@ -6,15 +6,13 @@ const EmployeeModel = require("./models/Employee")
 
 const app = express();
 app.use(express.json());
-app.use(cors(
-  {
-    origin: ["https://deploy-baru-cape.vercel.app"],
-    methods: ["POST", "GET", "PUT"],
-    credentials: true
-  }
-));
+app.use(cors({
+  origin: 'https://deploy-baru-cape-pzbhv4aa0-nadeeauliahq.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true, // If you are using cookies or authentication headers
+}));
 
-mongoose.connect("mongodb+srv://nadeeaulia:palemb2703@cluster0.pga6q2i.mongodb.net/?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://nadeeaulia:palemb2703@cluster0.pga6q2i.mongodb.net/test?retryWrites=true&w=majority");
 
 app.get('/users', (req, res) => {
   UserModel.find({})
