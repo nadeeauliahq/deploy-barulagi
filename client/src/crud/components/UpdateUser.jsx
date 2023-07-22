@@ -12,7 +12,7 @@ function UpdateUser() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/getUser/" + id)
+      .get("https://deploy-project-new.vercel.app/getUser/" + id)
       .then((result) => {
         console.log(result);
         setName(result.data.name);
