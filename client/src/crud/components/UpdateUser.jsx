@@ -12,7 +12,7 @@ function UpdateUser() {
 
   useEffect(() => {
     axios
-      .get("https://deploy-project-new.vercel.app/getUser/" + id)
+      .get("https://deploy-baru-lagi.vercel.app/getUser/" + id)
       .then((result) => {
         console.log(result);
         setName(result.data.name);
@@ -25,7 +25,7 @@ function UpdateUser() {
   const handleUpdate = (e) => {
     e.preventDefault();
     axios
-      .put("https://deploy-project-new.vercel.app/update/" + id, { name, forWho, message })
+      .put("https://deploy-baru-lagi.vercel.app/update/" + id, { name, forWho, message })
       .then((result) => {
         console.log(result);
         navigate("/users");
