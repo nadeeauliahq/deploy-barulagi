@@ -75,11 +75,7 @@ app.post("/register", (req, res) => {
     .catch(err => res.json(err));
 });
 
-app.post("/", (req, res) => {
-  EmployeeModel.create(req.body)
-    .then(user => res.json(user))
-    .catch(err => res.json(err));
-});
+
 
 app.listen(3001, () => {
   console.log("Server is running");
