@@ -7,7 +7,7 @@ const EmployeeModel = require("./models/Employee")
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: 'https://deploy-baru-cape-pzbhv4aa0-nadeeauliahq.vercel.app',
+  origin: 'https://deploy-baru-cape-8t7xj3vy7-nadeeauliahq.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true, // If you are using cookies or authentication headers
 }));
