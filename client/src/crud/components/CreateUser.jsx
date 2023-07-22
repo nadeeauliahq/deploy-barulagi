@@ -38,7 +38,7 @@ function CreateUser() {
 
     // Submit form if all fields are filled
     axios
-      .post("http://localhost:3001/create", { name, forWho, message })
+      .post("https://deploy-project-new.vercel.app/create", { name, forWho, message })
       .then((result) => {
         console.log(result);
         navigate("/users");
