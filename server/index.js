@@ -8,8 +8,8 @@ const app = express();
 app.use(express.json());
 app.use(cors(
   {
-    origin: ["https://deploy-baru-deh.vercel.app"],
-    methods: ["POST", "GET"],
+    origin: [""],
+    methods: ["POST", "GET", "PUT"],
     credentials: true
   }
 ));
