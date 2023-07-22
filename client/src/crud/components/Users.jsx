@@ -9,14 +9,14 @@ function Users() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/users")
+      .get("https://deploy-project-new.vercel.app/users")
       .then((result) => setUsers(result.data))
       .catch((err) => console.log(err));
   }, []);
 
   const handleDelete = (id) => {
     axios
-      .delete("http://localhost:3001/delete/" + id)
+      .delete("https://deploy-project-new.vercel.app/delete/" + id)
       .then((res) => {
         console.log(res);
         window.location.reload();
