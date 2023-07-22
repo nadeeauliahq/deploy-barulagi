@@ -9,7 +9,7 @@ function Signup() {
     const [password, setPassword] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
     const navigate = useNavigate();
-
+    axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -24,7 +24,7 @@ function Signup() {
         }
 
         axios
-            .post("http://localhost:3001/register", { name, email, password })
+            .post("https://deploy-project-new.vercel.app/register", { name, email, password })
             .then((res) => {
                 navigate("/login");
             })
